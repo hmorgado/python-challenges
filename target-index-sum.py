@@ -4,13 +4,24 @@ nums = _nums
 
 target = 11
 
+visited_indexes = []
+
 for i in range(len(nums)):
     current_item = nums[i]
     delta_target_item = target - current_item
     if delta_target_item in nums:
         index_one = nums.index(delta_target_item)
         index_two = nums.index(current_item)
-        print(f"index {index_one}, element {nums[index_one]}")
-        print(f"index {index_two}, element {nums[index_two]}")
-        print(f"sum {nums[index_one] + nums[index_two]}")
+
+        hash_1 = f"{index_one}-{index_two}"
+        hash_2 = f"{index_two}-{index_one}"
+
+        if hash_1 not in visited_indexes or hash_2 not in visited_indexes:
+            print(f"index {index_one}, element {nums[index_one]}")
+            print(f"index {index_two}, element {nums[index_two]}")
+            print(f"sum {nums[index_one] + nums[index_two]}")
+
+            visited_indexes.append(hash_1)
+            visited_indexes.append(hash_2)
+
         print('---')
