@@ -1,4 +1,4 @@
-_nums = [1, 3, 6, 8, 5, 4, 9, 9]
+_nums = [1, 3, 6, 8, 5, 4, 9, 9, 0]
 nums = set()
 nums = _nums
 
@@ -17,8 +17,9 @@ for i in range(len(nums)):
         hash_2 = f"{index_two}-{index_one}"
 
         target_found = True
-
-        if hash_1 not in visited_indexes or hash_2 not in visited_indexes:
+        both_index_are_the_same = index_one == index_two
+        condition = (hash_1 not in visited_indexes or hash_2 not in visited_indexes) and not both_index_are_the_same
+        if condition:
             print(f"index {index_one}, element {nums[index_one]}")
             print(f"index {index_two}, element {nums[index_two]}")
             print(f"sum {nums[index_one] + nums[index_two]}")
@@ -26,7 +27,6 @@ for i in range(len(nums)):
             visited_indexes.append(hash_1)
             visited_indexes.append(hash_2)
             print('---')
-
 
 if not target_found:
     print(f"target {target} not found")
