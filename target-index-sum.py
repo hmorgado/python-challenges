@@ -1,3 +1,5 @@
+# personal script
+
 _nums = [1, 3, 6, 8, 5, 4, 9, 9, 0]
 nums = set()
 nums = _nums
