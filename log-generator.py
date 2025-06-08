@@ -54,3 +54,4 @@ if __name__ == "__main__":
     print(f"Log file 'access.log' created with {amount_of_lines} lines.")
 
 
+
