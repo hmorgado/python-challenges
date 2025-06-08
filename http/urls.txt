@@ -1,0 +1,10 @@
+https://www.google.com
+https://www.notarealwebsite.dev
+https://httpstat.us/500
+https://httpstat.us/400
+https://httpstat.us/403
+https://httpstat.us/404
+https://httpstat.us/504
+https://httpstat.us/403
+https://httpstat.us/200
+https://httpstat.us/301
