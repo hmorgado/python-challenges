@@ -4,7 +4,7 @@ _nums = [1, 3, 6, 8, 5, 4, 9, 9, 0]
 nums = set()
 nums = _nums
 
-target = 2
+target = 8
 
 visited_indexes = []
 target_found = False
