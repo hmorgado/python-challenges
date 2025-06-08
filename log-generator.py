@@ -52,6 +52,3 @@ amount_of_lines = 10000
 if __name__ == "__main__":
     generate_log_file("access.log", amount_of_lines)
     print(f"Log file 'access.log' created with {amount_of_lines} lines.")
-
-
-
